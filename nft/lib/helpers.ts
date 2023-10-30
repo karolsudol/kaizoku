@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 import {
   Connection,
   Keypair,
@@ -9,6 +7,8 @@ import {
   TransactionMessage,
   VersionedTransaction,
 } from "@solana/web3.js";
+import fs from "fs";
+import path from "path";
 
 // define some default locations
 const DEFAULT_KEY_DIR_NAME = ".local_keys";

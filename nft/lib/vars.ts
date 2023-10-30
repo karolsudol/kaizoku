@@ -1,10 +1,10 @@
 /**
  *
  */
-import dotenv from "dotenv";
-import { Connection, clusterApiUrl } from "@solana/web3.js";
-import { loadKeypairFromFile, loadOrGenerateKeypair } from "./helpers";
 import { PublicKey } from "@metaplex-foundation/js";
+import { Connection, clusterApiUrl } from "@solana/web3.js";
+import dotenv from "dotenv";
+import { loadKeypairFromFile, loadOrGenerateKeypair } from "./helpers";
 
 // load the env variables from file
 dotenv.config();
