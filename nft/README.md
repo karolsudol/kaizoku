@@ -1,11 +1,5 @@
 # Mint NFT
 
-
-## Tech stack used
-
-- uses TypeScript and NodeJS
-- yarn (as the package manager)
-
 ## Setup locally
 
 1. Clone this repo to your local system
@@ -16,8 +10,7 @@
 If you have the Solana CLI installed locally: update the `LOCAL_PAYER_JSON_ABSPATH` environment
 variable to be the **_absolute path_** of your local testing wallet keypair JSON file.
 
-## Recommended flow to explore this repo
-
+## Scripts
 
 - [`1.simpleTransaction.ts`](./scripts/1.simpleTransaction.ts)
 - [`2.complexTransaction.ts`](./scripts/2.complexTransaction.ts)
@@ -26,7 +19,6 @@ variable to be the **_absolute path_** of your local testing wallet keypair JSON
 - [`5.updateMetadata.ts`](./scripts/5.updateMetadata.ts)
 - [`6.createNFTs.ts`](./scripts/6.createNFTs.ts)
 
-After reviewing the code in each of these scripts, try running each in order.
 
 > **Note:** Running each of these scripts may save some various bits of data to a `.local_keys`
 > folder within this repo for use by the other scripts later in this ordered list. Therefore,
