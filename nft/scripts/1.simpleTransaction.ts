@@ -4,8 +4,8 @@
  */
 
 // import custom helpers for demos
-import { payer, connection } from "@/lib/vars";
 import { explorerURL, printConsoleSeparator } from "@/lib/helpers";
+import { connection, payer } from "@/lib/vars";
 
 //
 import {
