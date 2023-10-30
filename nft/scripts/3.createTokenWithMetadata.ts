@@ -41,9 +41,9 @@ import {
     // define how many decimals we want our tokens to have
     decimals: 2,
     //
-    name: "Seven Seas Gold",
+    name: "Kaizoku",
     //
-    symbol: "GOLD",
+    symbol: "KAI",
     //
     uri: "https://thisisnot.arealurl/info.json",
   };
