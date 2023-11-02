@@ -49,6 +49,23 @@ import { Metaplex, bundlrStorage, keypairIdentity } from "@metaplex-foundation/j
 
     console.log("Creating NFT using Metaplex...");
 
+    const { nft, response } = await metaplex.nfts().create({
+        uri,
+        name: metadata.name,
+        symbol: metadata.symbol,
+        sellerFeeBasisPoints: 500, // Represents 5.00%.
+
+        //
+        isMutable: true,
+    });
+
+    console.log(nft);
+
+    printConsoleSeparator("NFT created:");
+    console.log(explorerURL({ txSignature: response.signature }));
+
+
+
 
 
 })();
