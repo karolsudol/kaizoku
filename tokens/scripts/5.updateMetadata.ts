@@ -1,4 +1,3 @@
-import { payer, connection } from "@/lib/vars";
 import {
     buildTransaction,
     explorerURL,
@@ -6,12 +5,13 @@ import {
     loadPublicKeysFromFile,
     printConsoleSeparator,
 } from "@/lib/helpers";
+import { connection, payer } from "@/lib/vars";
 
-import { PublicKey } from "@solana/web3.js";
 import {
     PROGRAM_ID as METADATA_PROGRAM_ID,
     createUpdateMetadataAccountV2Instruction,
 } from "@metaplex-foundation/mpl-token-metadata";
+import { PublicKey } from "@solana/web3.js";
 
 (async () => {
     console.log("Payer address:", payer.publicKey.toBase58());
@@ -62,7 +62,28 @@ import {
         },
     );
 
+    const tx = await buildTransaction({
+        connection,
+        payer: payer.publicKey,
+        signers: [payer],
+        instructions: [updateMetadataInstruction],
+    });
 
+    printConsoleSeparator();
 
+    try {
+        const sig = await connection.sendTransaction(tx);
+
+        console.log("Transaction completed.");
+        console.log(explorerURL({ txSignature: sig }));
+
+    } catch (err) {
+        console.error("Failed to send transaction:");
+
+        const failedSig = await extractSignatureFromFailedTransaction(connection, err);
+        if (failedSig) console.log("Failed signature:", explorerURL({ txSignature: failedSig }));
+
+        throw err;
+    }
 
 })();
