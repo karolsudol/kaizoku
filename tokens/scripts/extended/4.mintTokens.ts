@@ -3,11 +3,11 @@
  */
 
 // import custom helpers for demos
-import { payer, connection } from "@/lib/vars";
 import { explorerURL, loadPublicKeysFromFile } from "@/lib/helpers";
+import { connection, payer } from "@/lib/vars";
 
-import { PublicKey } from "@solana/web3.js";
 import { getOrCreateAssociatedTokenAccount, mintTo } from "@solana/spl-token";
+import { PublicKey } from "@solana/web3.js";
 
 (async () => {
   //////////////////////////////////////////////////////////////////////////////
