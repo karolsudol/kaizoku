@@ -24,6 +24,40 @@ import {
     const lamports = await connection.getMinimumBalanceForRentExemption(space);
     console.log("Total lamports:", lamports);
 
+    const createAccountIx = SystemProgram.createAccount({
+        fromPubkey: payer.publicKey,
+        newAccountPubkey: keypair.publicKey,
+        lamports,
+        space,
+        programId: SystemProgram.programId,
+    });
+
+    let recentBlockhash = await connection.getLatestBlockhash().then(res => res.blockhash);
+
+    const message = new TransactionMessage({
+        payerKey: payer.publicKey,
+        recentBlockhash,
+        instructions: [createAccountIx],
+    }).compileToV0Message();
+
+    const tx = new VersionedTransaction(message);
+
+    tx.sign([payer, keypair]);
+    console.log("tx after signing:", tx);
+
+    const sig = await connection.sendTransaction(tx);
+
+    printConsoleSeparator();
+
+    console.log("Transaction completed.");
+    console.log(explorerURL({ txSignature: sig }));
+
+
+
+
+
+
+
 
 
 
