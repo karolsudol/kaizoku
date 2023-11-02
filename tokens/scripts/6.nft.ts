@@ -1,9 +1,9 @@
 
-import { payer, connection } from "@/lib/vars";
 import { explorerURL, loadPublicKeysFromFile, printConsoleSeparator } from "@/lib/helpers";
+import { connection, payer } from "@/lib/vars";
 
-import { PublicKey } from "@solana/web3.js";
 import { Metaplex, bundlrStorage, keypairIdentity } from "@metaplex-foundation/js";
+import { PublicKey } from "@solana/web3.js";
 
 (async () => {
 
@@ -64,8 +64,13 @@ import { Metaplex, bundlrStorage, keypairIdentity } from "@metaplex-foundation/j
     printConsoleSeparator("NFT created:");
     console.log(explorerURL({ txSignature: response.signature }));
 
+    return;
 
+    printConsoleSeparator("Find by mint:");
 
-
+    const mintInfo = await metaplex.nfts().findByMint({
+        mintAddress: tokenMint,
+    });
+    console.log(mintInfo);
 
 })();
