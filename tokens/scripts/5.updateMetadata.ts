@@ -32,5 +32,37 @@ import {
         uri: "https://thisisnot.arealurl/new.json",
     };
 
+    const metadataAccount = PublicKey.findProgramAddressSync(
+        [Buffer.from("metadata"), METADATA_PROGRAM_ID.toBuffer(), tokenMint.toBuffer()],
+        METADATA_PROGRAM_ID,
+    )[0];
+
+    console.log("Metadata address:", metadataAccount.toBase58());
+
+    const updateMetadataInstruction = createUpdateMetadataAccountV2Instruction(
+        {
+            metadata: metadataAccount,
+            updateAuthority: payer.publicKey,
+        },
+        {
+            updateMetadataAccountArgsV2: {
+                data: {
+                    creators: null,
+                    name: tokenConfig.name,
+                    symbol: tokenConfig.symbol,
+                    uri: tokenConfig.uri,
+                    sellerFeeBasisPoints: 0,
+                    collection: null,
+                    uses: null,
+                },
+                isMutable: true,
+                primarySaleHappened: null,
+                updateAuthority: payer.publicKey,
+            },
+        },
+    );
+
+
+
 
 })();
