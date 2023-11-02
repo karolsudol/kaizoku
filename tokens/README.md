@@ -12,12 +12,12 @@ variable to be the **_absolute path_** of your local testing wallet keypair JSON
 
 ## Scripts
 
-- [`1.simpleTransaction.ts`](./scripts/1.simpleTransaction.ts)
-- [`2.complexTransaction.ts`](./scripts/2.complexTransaction.ts)
-- [`3.createTokenWithMetadata.ts`](./scripts/3.createTokenWithMetadata.ts)
-- [`4.mintTokens.ts`](./scripts/4.mintTokens.ts)
-- [`5.updateMetadata.ts`](./scripts/5.updateMetadata.ts)
-- [`6.createNFTs.ts`](./scripts/6.createNFTs.ts)
+- [`1.simpleTransaction.ts`](./scripts/extended/1.simpleTransaction.ts)
+- [`2.complexTransaction.ts`](./scripts/extended/2.complexTransaction.ts)
+- [`3.createTokenWithMetadata.ts`](./scripts/extended/3.createTokenWithMetadata.ts)
+- [`4.mintTokens.ts`](./scripts/extended/4.mintTokens.ts)
+- [`5.updateMetadata.ts`](./scripts/extended/5.updateMetadata.ts)
+- [`6.createNFTs.ts`](./scripts/extended/6.createNFTs.ts)
 
 
 > **Note:** Running each of these scripts may save some various bits of data to a `.local_keys`
