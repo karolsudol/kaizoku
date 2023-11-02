@@ -1,5 +1,13 @@
 # Mint NFT
 
+[PAYER-ACC](https://explorer.solana.com/address/Dqursd1QsFnQUt7Jo3ajYPH7Ldsyqrqn22nbkheiatdi/tokens?cluster=devnet)
+[TOKEN-1](https://explorer.solana.com/address/3Y5cjnnRFwwBVAAyMKuSZJSkCft597geeFnovsu5v9bT?cluster=devnet)
+[TOKEN-2](https://explorer.solana.com/address/H4NwmnhvJw6qeSj1sn4DAva5Tz4ZdLyAY22LgV1D3NpQ?cluster=devnet)
+[NFT](https://explorer.solana.com/address/BHLHPzzkvMqAjEMBXxM2o9wLuEbU2AQu4GykpcG9fUQ3?cluster=devnet)
+
+
+
+
 ## Setup locally
 
 1. Clone this repo to your local system
