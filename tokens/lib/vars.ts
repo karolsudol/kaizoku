@@ -27,4 +27,4 @@ export const CLUSTER_URL = process.env.RPC_URL ?? clusterApiUrl("devnet");
 export const connection = new Connection(CLUSTER_URL, "single");
 
 // define an address to also transfer lamports too
-export const STATIC_PUBLICKEY = new PublicKey("DuZ6tbBnkTRt7WWNfxfVqk46ujdXR45zE5jEdiFicUjN");
+export const STATIC_PUBLICKEY = new PublicKey("Dqursd1QsFnQUt7Jo3ajYPH7Ldsyqrqn22nbkheiatdi");
