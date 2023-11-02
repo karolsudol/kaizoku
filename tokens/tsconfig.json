@@ -16,9 +16,18 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
-  "include": ["**/*.ts", "**/**.ts", "**/*.tsx"],
-  "exclude": ["node_modules", ".vscode"]
+  "include": [
+    "**/*.ts",
+    "**/**.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode"
+  ]
 }
