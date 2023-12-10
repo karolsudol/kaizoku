@@ -25,5 +25,9 @@
     "typescript": "^4.9.5",
     "vite": "^4.4.9",
     "vitest": "^0.26.3"
+  },
+  "dependencies": {
+    "@digitak/esrun": "^3.2.25",
+    "@solana/web3.js": "^1.87.6"
   }
 }
