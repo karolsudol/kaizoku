@@ -34,3 +34,16 @@ p {
     max-width: none;
   }
 }
+
+.responsive-image {
+  max-width: 100%;
+  /* Maximum width of 100% of the container */
+  max-height: 100vh;
+  /* Maximum height of 100% of the viewport height */
+  display: block;
+  /* Removes any extra space around the image */
+  margin: 0 auto;
+  /* Centers the image horizontally */
+  object-fit: contain;
+  /* Keep the aspect ratio */
+}
