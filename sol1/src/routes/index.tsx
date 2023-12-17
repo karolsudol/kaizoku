@@ -1,4 +1,4 @@
-import CheckBalance from "~/components/CheckBalance"; // Add this line
+import CheckBalance from "~/components/CheckBalance";
 import Counter from "~/components/Counter";
 import pirateImage from "~/components/pirate.jpeg";
 import "./index.css";
