@@ -33,6 +33,8 @@ Solana txs, nfts, defi with anchor and solid-js
 
 # ⚗️ Testing
 
+npx esrun check-balance.ts 31ZdXAvhRQyzLC2L97PC6Lnf2yWgHhQUKKYoUo9MLQF5
+
 # 📄 License
 Made with ❤️ by [karolsudol](https://github.com/karolsudol)
 [MIT License](https://opensource.org/licenses/MIT)
