@@ -10,6 +10,25 @@ Solana txs, nfts, defi with anchor and solid-js
 
 # 🏗️ Development
 
+## solana cli
+
+- solana config set --url https://api.devnet.solana.com 
+
+- solana-keygen new --outfile kaizoku.json
+
+- solana-keygen verify BFm2SLA8xcjWZP7tbLMFWyXaTi8ZvvYthfXoNMxY3sGC kaizoku.json 
+
+- solana airdrop 1 BFm2SLA8xcjWZP7tbLMFWyXaTi8ZvvYthfXoNMxY3sGC --url https://api.devnet.solana.com
+
+- solana config set --keypair kaizoku.json
+
+- solana config get  
+
+- solana balance
+
+- solana address
+
+
 
 
 # ⚗️ Testing
