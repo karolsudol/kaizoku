@@ -7,6 +7,12 @@ Solana txs, nfts, defi with anchor and solid-js
 
 # 📃 Overview
 
+webiste
+
+game
+
+tokens
+
 
 # 🏗️ Development
 
@@ -28,6 +34,21 @@ Solana txs, nfts, defi with anchor and solid-js
 
 - solana address
 
+## webiste
+
+0. cd website
+1. npm install
+2. npm run dev -- --open
+
+## game
+
+- npm install
+- npm run dev
+
+## tokens
+
+- npm install
+- npm run dev
 
 
 
