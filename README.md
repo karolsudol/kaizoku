@@ -2,7 +2,8 @@
 
 Solana txs, nfts, defi with anchor and solid-js
 
-![](assets/pirate.jpeg)
+![Pirate Image](https://nftstorage.link/ipfs/bafybeifdzsne2dcf2encdizdt55hdkpqolcauwtizuxkbofpb5ewigtbqy/3649.jpeg)
+
 
 
 # 📃 Overview
